@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="static/logo.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <link rel="stylesheet" type="text/css" href="/team.css">
+    <link rel="stylesheet" href="/navbar.css" />
+    <title>Lista A - Manifesto</title>
+</head>
+<style>
+
+.footer{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+.logo img {
+    max-height: 50px; /* Adjust this value based on your navbar's height */
+    width: auto; /* Maintain the aspect ratio of the logo */
+}
+
+.navbar-toggle {
+      cursor: pointer;
+      display: inline-block;
+  }
+
+  .top-bar, .middle-bar, .bottom-bar {
+      display: block;
+      width: 25px;
+      height: 3px;
+      background-color: black;
+      margin: 5px 0;
+      transition: all 0.3s ease;
+  }
+
+  /* Transformations for the open state */
+  .navbar-toggler.open .top-bar {
+      transform: translateY(8px) rotate(45deg);
+  }
+
+  .navbar-toggler.open .middle-bar {
+      opacity: 0;
+  }
+
+  .navbar-toggler.open .bottom-bar {
+      transform: translateY(-8px) rotate(-45deg);
+  }
+
+  /* Set the maximum height for the image within the carousel */
+  .max-height-carousel {
+  max-height: 400px; /* Adjust the maximum height as needed */
+  width: auto; /* Maintain aspect ratio */
+}
+
+/* Adjust the caption's position */
+   .carousel-caption {
+  bottom: 0;
+}
+
+
+.carousel-item img {
+    width: 100%; /* Full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the container without stretching */
+}
+
+  .container {
+    display: flex;
+    justify-content: center; /* Centers the carousel horizontally */
+    align-items: center; /* Centers the carousel vertically */
+    flex-direction: column; /* Stacks items vertically */
+    max-width: 100%; /* Ensures container does not exceed the width of its parent */
+  }
+
+  .carousel {
+    position: relative;
+    width: 100%; /* Sets the carousel to fill the width of its container */
+    max-width: 900px; /* Adjusts maximum width of the carousel as needed */
+    margin: auto; /* Ensures the carousel is centered within its container */
+  }
+
+
+  .nav-links:hover {
+    color: rgb(79, 185, 168) !important; /* Replace with your desired hover color */
+    text-decoration: none; /* Optional: Removes the underline effect on hover */
+}
+  /* Increased top margin for larger screens */
+  @media screen and (min-width: 769px) {
+  .logo {
+    order: 1;
+  }
+
+  
+  .main-nav {
+    order: 2;
+    position: static;
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+  }
+
+  .main-nav li {
+    display: inline-block;
+  }
+
+  .nav-links {
+    padding: 14px 16px;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+}
+
+.carousel-container {
+  display: flex;
+  justify-content: center; /* Centers the carousel horizontally */
+  align-items: center; /* Centers the carousel vertically */
+  flex-direction: column; /* Stacks items vertically */
+  max-width: 100%; /* Ensures container does not exceed the width of its parent */
+}
+
+.row {
+  display: flex;
+  justify-content: center; /* Centers the items horizontally */
+  flex-wrap: wrap; /* Allows items to wrap in smaller screens */
+}
+
+/* Set a maximum width for the cards */
+.card {
+  max-width: 300px; /* Adjust the maximum width as needed */
+  margin: auto; /* Center the cards within the column */
+  background-color: rgb(178, 178, 178); /* Set the background color */
+  
+  
+
+
+
+
+}
+
+.my-custom-card {
+  border: none;
+  box-shadow: none;
+  
+}
+.my-custom-button {
+    background-color: rgb(79, 185, 168) !important; /* Replace with your desired color */
+    border-color: whitesmoke !important; /* Optional: if you want a specific border color */
+    box-shadow: none !important; /* Optional: if you don't want the button to be focused after clicking */
+}
+
+.carousel {
+  position: relative;
+  width: 100%; /* Sets the carousel to fill the width of its container */
+  max-width: 900px; /* Adjusts maximum width of the carousel as needed */
+  margin: auto; /* Ensures the carousel is centered within its container */
+}
+  /* Padding for mobile screens */
+  @media screen and (max-width: 768px) {
+    .navbar-toggle {
+      display: inline-block;
+    }
+  }
+
+  </style>
+<body style="background-color: rgb(178, 178, 178);">
+  <nav class="navbar">
+    <span class="navbar-toggle navbar-toggler" id="js-navbar-toggle">
+        <span class="top-bar"></span>
+        <span class="middle-bar"></span>
+        <span class="bottom-bar"></span>
+    </span>
+    <a href="/index.html" class="logo">
+      <img src="static/logo2.png" alt="Your Logo">
+  </a>    <ul class="main-nav" id="js-menu">
+        <li>
+            <a href="/index.html" class="nav-links">Página Principal</a>
+        </li>
+        <li>
+            <a href="/equipa.html" class="nav-links">Equipa</a>
+        </li>
+        <li>
+            <a href="/manifesto.html" class="nav-links">Manifesto</a>
+        </li>
+    </ul>
+</nav>
+<br>
+<br>
+<section class="carousel-container">
+  <div class="row col-md-6 col-lg-6">
+      <div class="col-md-6 col-12">
+        <div class="card my-custom-card card mb-3">
+          <!-- <img class="card-img-top" src="path_to_portuguese_manifest_image.png" alt="Manifesto Portuguese Version"> -->
+          <div class="card-body d-flex flex-column justify-content-center align-items-center">
+            <h4 class="card-title">Manifesto[PT]</h4>
+            <a href="static/manifesto/Manifesto - PT.pdf" class="btn btn-primary my-custom-button" target="_blank">Consultar Manifesto</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-12">
+        <div class="card my-custom-card mb-3">
+          <!-- <img class="card-img-top" src="path_to_english_manifest_image.png" alt="Manifesto English Version"> -->
+          <div class="card-body d-flex flex-column justify-content-center align-items-center">
+            <h4 class="card-title">Manifest[EN]</h4>
+            <a href="static/manifesto/Manifesto - ENG.pdf" class="btn btn-primary my-custom-button" target="_blank">View Manifest</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    Lista A AAUAv 2025
+</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/script.js"></script>
+    <script src="/nav.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var navbarToggle = document.getElementById('js-navbar-toggle');
+            var menu = document.getElementById('js-menu');
+    
+            // Toggle the menu on click
+            navbarToggle.addEventListener('click', function () {
+                this.classList.toggle('open');
+                menu.classList.toggle('open'); // Assuming you have some CSS to show/hide the menu
+            });
+    
+            // Close the menu when clicking outside
+            document.addEventListener('click', function (event) {
+                var isClickInsideNavbar = navbarToggle.contains(event.target);
+                var isClickInsideMenu = menu.contains(event.target);
+    
+                if (!isClickInsideNavbar && !isClickInsideMenu) {
+                    navbarToggle.classList.remove('open');
+                    menu.classList.remove('open'); // Hide the menu
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

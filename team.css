@@ -1,0 +1,30 @@
+/* Custom styles for mobile-first design */
+.team-sector {
+    margin-top: 15px; /* Spacing for readability */
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Choose your preferred font */
+    position: relative;
+    min-height: 100vh; /* Ensure that the content takes up at least the full viewport height */
+}
+
+/* Style the footer */
+footer {
+    background-color: #333; /* Change to your desired background color */
+    color: white; /* Text color */
+    text-align: center;
+    padding: 15px 0; /* Adjust padding to make it thinner */
+    position: fixed; /* Make the footer fixed */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* Adjust styles for smaller screens (mobile) */
+@media screen and (max-width: 600px) {
+    footer {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+}

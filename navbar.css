@@ -1,0 +1,107 @@
+body {
+  font-family: 'Bold', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.navbar {
+  height: 60px;
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between; /* Ensures elements are spaced apart */
+  align-items: center;
+  padding: 0 20px;
+  z-index: 2000; /* Ensuring navbar is above the menu */
+  position: relative; /* Required for z-index to work correctly */
+}
+
+.main-nav {
+  list-style-type: none;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  flex-direction: column;
+  z-index: 1000; 
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0.3s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.nav-links {
+  color: white;
+  text-decoration: none;
+  padding: 14px 16px;
+  display: block;
+}
+
+
+.navbar-toggle {
+  display: none;
+  cursor: pointer;
+  order: 2; /* Position the hamburger icon last */
+}
+
+.navbar-toggle span {
+  display: block;
+  width: 25px; /* Adjust as needed */
+  height: 3px; /* Adjust as needed */
+  background-color: white; /* Make it visible against the navbar */
+  margin: 5px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.logo {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 22px;
+  order: 1; /* Position the logo first */
+}
+
+.main-nav.active {
+  transform: translateX(0%); /* Slide in menu */
+  opacity: 1;
+  visibility: visible; /* Make menu visible */
+}
+
+/* Adjusting the display of the main-nav for non-mobile view */
+@media screen and (min-width: 769px) {
+  .logo {
+   order: 1;
+  }
+
+  .main-nav {
+    display: flex;
+    justify-content: center; /* Center the navigation items */
+    flex-grow: 1; /* Allows the navigation to expand and utilize the available space */
+    /* Resetting positioning properties if they were set for mobile view */
+    position: static;
+    transform: none;
+    opacity: 1;
+    visibility: visible;
+    background-color: transparent;
+  }
+
+  .main-nav li {
+    display: inline-block;
+  }
+
+  .navbar-toggle {
+    display: none; /* Hide the hamburger icon */
+  }
+}
+
+/* Mobile view specific styles */
+@media screen and (max-width: 768px) {
+  .navbar-toggle {
+    display: block;
+  }
+
+  .main-nav.active {
+    display: flex;
+  }
+}
