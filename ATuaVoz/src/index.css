@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @layer base {
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      src: url('/fonts/roboto-v27-latin-regular.eot'); /* IE9 Compat Modes */
+    }
+  }
+}
+
