@@ -1,5 +1,5 @@
-//import Navbar from '../Navbar.jsx';
-//import Footer from '../Footer.jsx';
+import MyNavbar from './Navbar.jsx';
+//import MyFooter from './Footer.jsx';
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import { useState } from "react";
@@ -9,12 +9,12 @@ export default function LandingPage() {
 
   return (
     <>
-      {/* <Navbar /> */}
+      <MyNavbar />
       <div>
-        <a href="https://vite.dev" target="_blank">
+        <a >
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
-        <a href="https://react.dev" target="_blank">
+        <a >
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>

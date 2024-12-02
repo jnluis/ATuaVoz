@@ -1,9 +1,11 @@
+import MyNavbar from "./Navbar";
+
 export default function Equipa() {
   return (
     <>
-    {/* <Navbar /> */}
+    <MyNavbar/>
       <h1>Equipa</h1>
-      {/* //  <Footer /> */}
+      {/* //  <MyFooter /> */}
     </>
   );
 }
