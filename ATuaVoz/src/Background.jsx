@@ -17,12 +17,12 @@ export default function Background({ children }) {
   }, []);
 
   return (
-    <div className="relative">
+    <div className="relative w-full">
       {init && (
         <Particles
           id="tsparticles"
           options={particlesConfig}
-          className="absolute h-screen w-screen -z-10"
+          className="absolute -z-10"
         />
       )}
       <div className="relative z-10">{children}</div> {/* Content overlays particles */}
