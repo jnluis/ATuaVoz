@@ -1,16 +1,30 @@
+import { useState } from "react";
 import MyNavbar from "./components/Navbar";
 import MyFooter from "./components/Footer";
 import { Button } from "@nextui-org/react";
 import MyPDFReader from "./components/Reader";
 
 // Import your PDF files
-import manifestoPT from './assets/ManifestoPT.pdf';
-import manifestoEN from './assets/ManifestoENG.pdf';
+import manifestoPT from "./assets/ManifestoPT.pdf";
+import manifestoEN from "./assets/ManifestoENG.pdf";
 
 export default function Manifesto() {
+  const [currentPDF, setCurrentPDF] = useState(manifestoPT);
+  const [language, setLanguage] = useState("PT");
+
   const openPDF = (pdfPath) => {
     // Open PDF in a new window/tab
-    window.open(pdfPath, '_blank');
+    window.open(pdfPath, "_blank");
+  };
+
+  const toggleLanguage = () => {
+    if (language === "PT") {
+      setCurrentPDF(manifestoEN);
+      setLanguage("EN");
+    } else {
+      setCurrentPDF(manifestoPT);
+      setLanguage("PT");
+    }
   };
 
   return (
@@ -40,7 +54,11 @@ export default function Manifesto() {
             </Button>
           </div>
           <div className="w-full max-w-4xl mt-6">
-            <MyPDFReader fileURL={manifestoPT} />
+            <MyPDFReader
+              fileURL={currentPDF}
+              language={language}
+              toggleLanguage={toggleLanguage}
+            />
           </div>
         </main>
         <MyFooter />
