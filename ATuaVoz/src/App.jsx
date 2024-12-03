@@ -3,6 +3,7 @@ import './App.css';
 import LandingPage from './LandingPage';
 import Equipa from './Equipa';
 import Background from "./Background"; 
+import Manifesto from "./Manifesto";
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/equipa" element={<Equipa />} />
+        <Route path="/manifesto" element={<Manifesto/>} />
       </Routes>
       </Background>
     </BrowserRouter>

@@ -1,5 +1,5 @@
-import MyNavbar from "./Navbar";
-import MyFooter from "./Footer";
+import MyNavbar from "./components/Navbar";
+import MyFooter from "./components/Footer";
 
 export default function Equipa() {
   return (

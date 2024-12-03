@@ -1,5 +1,6 @@
-import MyNavbar from "./Navbar.jsx";
-import MyFooter from "./Footer.jsx";
+import MyNavbar from "./components/Navbar.jsx";
+import MyFooter from "./components/Footer.jsx";
+import CarouselWithContent from "./components/Carousel.jsx";
 
 export default function LandingPage() {
 
@@ -9,6 +10,7 @@ export default function LandingPage() {
       <MyNavbar />
       <main className="flex-1"> {/* Main content grows to fill space */}
       <h1 className="text-orange-200">Vite + React</h1>
+      <CarouselWithContent />
       </main>
       <MyFooter />
     </div>

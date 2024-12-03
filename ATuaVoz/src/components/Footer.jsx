@@ -2,7 +2,7 @@ import { IoLogoInstagram, IoLogoGithub } from "react-icons/io5";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 py-6">
+    <footer className="text-gray-800 dark:text-gray-200 py-6">
         {/* TODO: VER CORES OU METER TUDO TRANSPARENTE! */}
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-center">

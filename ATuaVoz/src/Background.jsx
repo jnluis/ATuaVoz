@@ -32,5 +32,4 @@ export default function Background({ children }) {
 
 Background.propTypes = {
   children: PropTypes.node.isRequired, // Validate children prop as a node
-  config: PropTypes.object.isRequired, // Validate config prop as an object
 };
