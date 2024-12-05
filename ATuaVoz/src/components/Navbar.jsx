@@ -35,7 +35,7 @@ export default function MyNavbar() {
   ];
 
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen}>
+    <Navbar onMenuOpenChange={setIsMenuOpen} isBordered>
       {/* Left Content */}
       <NavbarContent>
         <NavbarMenuToggle

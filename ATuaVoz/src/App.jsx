@@ -1,5 +1,4 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import './App.css';
 import LandingPage from './LandingPage';
 import Equipa from './Equipa';
 import Background from "./Background"; 
