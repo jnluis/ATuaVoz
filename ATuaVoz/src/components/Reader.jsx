@@ -14,7 +14,7 @@ import { Button } from "@nextui-org/react";
 
 const PDFReader = ({ fileURL, language, toggleLanguage }) => {
   return (
-    <div className="w-full max-w-4xl h-[700px] overflow-hidden">
+    <div className="h-[700px] overflow-hidden">
       <div className="h-full overflow-y-auto">
         <Root fileURL={fileURL}>
           <div className="sticky top-0 z-10 border-b p-1 flex flex-wrap items-center justify-center text-sm text-gray-600 gap-2">
@@ -45,7 +45,7 @@ const PDFReader = ({ fileURL, language, toggleLanguage }) => {
           <Viewport className="w-full">
             <Pages>
               <Page>
-                <CanvasLayer />
+                <CanvasLayer className="scale-75 md:scale-100"/>
               </Page>
             </Pages>
           </Viewport>
