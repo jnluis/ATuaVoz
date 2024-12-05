@@ -48,7 +48,7 @@ export default function MyNavbar() {
           }`}
         >
             {/* TODO: talez esta posição absolute tenha de ser mudada! */}
-          <Link color="foreground" href="/">
+          <Link color="foreground" href="/ATuaVoz/">
             <p className="font-bold text-inherit">Logo da lista</p>
           </Link>
         </NavbarBrand>
