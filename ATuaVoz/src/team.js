@@ -49,7 +49,7 @@ const teamMembers = [
     imageUrl: "kiko.jpg",
     sector: "Cultura",
     curso: "Mestrado Integrado em Engenharia Mecânica ",
-    linkedin: "www.linkedin.com/in/francisco-teixeira-154bbb243",
+    linkedin: "https://www.linkedin.com/in/francisco-teixeira-154bbb243",
   },
   {
     name: "André Vieira",
@@ -57,14 +57,14 @@ const teamMembers = [
     imageUrl: "vieira.jpg",
     sector: "Cultura",
     curso: "Mestrado em Engenharia Mecânica",
-    linkedin: "www.linkedin.com/in/andré-vieira-6257472b8",
+    linkedin: "https://www.linkedin.com/in/andré-vieira-6257472b8",
   },
   {
-    name: "",
+    name: "Mafalda Ribeiro",
     position: "Vogal",
-    imageUrl: "",
+    imageUrl: "mafalda.jpg",
     sector: "Cultura",
-    curso: "",
+    curso: "Licenciatura em Fisioterapia",
     linkedin: "",
   },
   {
@@ -73,7 +73,7 @@ const teamMembers = [
     imageUrl: "CarolCorreia.jpg",
     sector: "Política Educativa, Empreendorismo e Internacionalização",
     curso: "Mestrado em Engenharia e Gestão Industrial",
-    linkedin: "www.linkedin.com/in/carolinacorreia03",
+    linkedin: "https://www.linkedin.com/in/carolinacorreia03",
   },
   {
     name: "Gonçalo Lourenço",
@@ -106,7 +106,7 @@ const teamMembers = [
     imageUrl: "chiquinho.jpg",
     sector: "Desporto e Bem Estar",
     curso: "Licenciatura em Engenharia Eletrotécnica e Computadores",
-    linkedin: "www.linkedin.com/in/fdominguesluis",
+    linkedin: "https://www.linkedin.com/in/fdominguesluis",
   },
   {
     name: "Matilde Pilar",
@@ -146,7 +146,7 @@ const teamMembers = [
     imageUrl: "luciana.jpg",
     sector: "Administração Interna",
     curso: "Lincenciatura em Engenharia Química",
-    linkedin: "www.linkedin.com/in/lucianasantos01",
+    linkedin: "https://www.linkedin.com/in/lucianasantos01",
   },
   {
     name: "Francisco Domingues",
@@ -260,7 +260,7 @@ const teamMembers = [
     imageUrl: "francisca.jpg",
     sector: "Mesa da Assembleia Geral",
     curso: "Mestrado em Gestão Comercial",
-    linkedin: "www.linkedin.com/in/francisca-ferreira-425345268",
+    linkedin: "https://www.linkedin.com/in/francisca-ferreira-425345268",
   },
   {
     name: "Maria Inês",

@@ -51,7 +51,7 @@ export default {
         },
       },
       color: {
-        value: "#147a26",
+        value: "#0000ff",
         animation: {
           h: {
             speed: 20,
@@ -60,7 +60,7 @@ export default {
       },
       links: {
         color: {
-          value: "#ffffff",
+          value: "#0000ff",
         },
         opacity: 0.4,
       },
@@ -99,7 +99,7 @@ export default {
         },
       },
       shape: {
-        type: "triangle",
+        type: "circle",
       },
       size: {
         random: {

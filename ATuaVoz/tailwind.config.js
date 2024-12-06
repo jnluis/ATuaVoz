@@ -20,7 +20,7 @@ const withMT = require("@material-tailwind/react/utils/withMT");
         "--label": "var(--label)",
         "--new": "var(--new)",
         "secondary": "#FFFFFF",
-        "light-bg": "#0000FF",
+        "primary": "#0000FF",
       },
       placeholderColor: {
         'light-mode': '#999999',
