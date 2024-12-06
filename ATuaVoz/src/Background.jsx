@@ -17,7 +17,7 @@ export default function Background({ children }) {
   }, []);
 
   return (
-    <div className="relative w-full">
+    <div className="relative w-full bg-light-bg">
       {init && (
         <Particles
           id="tsparticles"

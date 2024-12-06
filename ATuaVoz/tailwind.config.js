@@ -19,6 +19,8 @@ const withMT = require("@material-tailwind/react/utils/withMT");
         "option-text": "oklch(var(--option-text) / <alpha-value>)", 
         "--label": "var(--label)",
         "--new": "var(--new)",
+        "secondary": "#FFFFFF",
+        "light-bg": "#0000FF",
       },
       placeholderColor: {
         'light-mode': '#999999',

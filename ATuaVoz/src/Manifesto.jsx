@@ -37,16 +37,16 @@ export default function Manifesto() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl">
             <Button
-              color="success"
-              className="w-full"
+              color="secondary"
+              className="w-full text-black"
               auto
               onClick={() => openPDF(manifestoPT)}
             >
               Consultar Manifesto [PT]
             </Button>
             <Button
-              color="success"
-              className="w-full"
+              color="secondary"
+              className="w-full text-black"
               auto
               onClick={() => openPDF(manifestoEN)}
             >
