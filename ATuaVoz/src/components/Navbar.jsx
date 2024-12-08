@@ -10,6 +10,7 @@ import {
   Link,
 } from "@nextui-org/react";
 import { IoMoon, IoSunny } from "react-icons/io5";
+import asset4 from "../assets/logos/asset4.png";
 
 export default function MyNavbar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -48,7 +49,11 @@ export default function MyNavbar() {
           }`}
         >
           <Link color="foreground" href="/ATuaVoz/">
-            <p className="font-bold text-inherit">Logo da lista</p>
+          <img
+              src={asset4}
+              alt="Logo da Lista"
+              className="h-auto sm:h-10 w-auto dark:invert-0 invert" // Adjust height and width as needed
+            />
           </Link>
         </NavbarBrand>
       </NavbarContent>
@@ -89,10 +94,7 @@ export default function MyNavbar() {
         ))}
         {/* Add Theme Toggle to Mobile Menu */}
         <NavbarMenuItem>
-          <button
-            onClick={() => setIsDarkMode(!isDarkMode)}
-            className="p-2"
-          >
+          <button onClick={() => setIsDarkMode(!isDarkMode)} className="p-2">
             {isDarkMode ? <IoSunny size={20} /> : <IoMoon size={20} />}
           </button>
         </NavbarMenuItem>
