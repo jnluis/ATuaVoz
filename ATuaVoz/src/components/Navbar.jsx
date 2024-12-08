@@ -52,7 +52,7 @@ export default function MyNavbar() {
           <img
               src={asset4}
               alt="Logo da Lista"
-              className="h-auto sm:h-10 w-auto dark:invert-0 invert" // Adjust height and width as needed
+              className="h-auto sm:h-9 w-auto dark:invert-0 invert" // Adjust height and width as needed
             />
           </Link>
         </NavbarBrand>
