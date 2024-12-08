@@ -47,7 +47,6 @@ export default function MyNavbar() {
             isMenuOpen ? "absolute left-1/2 transform -translate-x-1/2" : ""
           }`}
         >
-            {/* TODO: talez esta posição absolute tenha de ser mudada! */}
           <Link color="foreground" href="/ATuaVoz/">
             <p className="font-bold text-inherit">Logo da lista</p>
           </Link>

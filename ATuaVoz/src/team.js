@@ -13,7 +13,7 @@ const teamMembers = [
   {
     name: "Carolina Alberto",
     position: "Vice-Presidente Adjunta",
-    imageUrl: "carolinaalberto.jpg",
+    imageUrl: "carolina.jpg",
     sector: "Presidência",
     curso: "Mestrado em Engenharia Biomédica",
     linkedin: "",
@@ -29,7 +29,7 @@ const teamMembers = [
   {
     name: "Guilherme Carola",
     position: "Tesoureiro Adjunto",
-    imageUrl: "wilson.jpg", 
+    imageUrl: "carola.jpg", 
     sector: "Presidência",
     curso: "Licenciatura em Administração Pública",
     linkedin: "",
@@ -39,7 +39,7 @@ const teamMembers = [
     position: "Secretário Geral",
     imageUrl: "hugo.jpg",
     sector: "Presidência",
-    curso: "Mestrado em Engeharia Mecânica",
+    curso: "Mestrado em Engenharia Mecânica",
     linkedin:
       "https://www.linkedin.com/in/hugo-oliveira-276aba175?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
   },
@@ -70,16 +70,16 @@ const teamMembers = [
   {
     name: "Carolina Correia",
     position: "Vice-Presidente",
-    imageUrl: "CarolCorreia.jpg",
-    sector: "Política Educativa, Empreendorismo e Internacionalização",
+    imageUrl: "carol_Correia.jpg",
+    sector: "Política Educativa",
     curso: "Mestrado em Engenharia e Gestão Industrial",
     linkedin: "https://www.linkedin.com/in/carolinacorreia03",
   },
   {
     name: "Gonçalo Lourenço",
     position: "Vogal",
-    imageUrl: "GonLourenço.jpg",
-    sector: "Política Educativa, Empreendorismo e Internacionalização",
+    imageUrl: "gon_Lourenco.jpg",
+    sector: "Política Educativa",
     curso: "Licenciatura em Línguas e Relações Empresariais",
     linkedin: "https://www.linkedin.com/in/gonçalo-lourenço-a6185225a",
   },
@@ -87,7 +87,7 @@ const teamMembers = [
     name: "Ana Rita Carvalhinho",
     position: "Vogal",
     imageUrl: "ritinha.jpg",
-    sector: "Política Educativa, Empreendorismo e Internacionalização",
+    sector: "Política Educativa",
     curso: "Mestrado em Psicologia da Saúde e Neuropsicologia",
     linkedin: "",
   },
@@ -117,9 +117,9 @@ const teamMembers = [
     linkedin: "https://www.linkedin.com/in/matilde-pilar-2029b6276/",
   },
   {
-    name: "Ana Sofia",
+    name: "Ana Sofia Delgado",
     position: "Vice-Presidente",
-    imageUrl: "Ana_Sofia.jpg",
+    imageUrl: "sofia.jpg",
     sector: "Apoio aos Núcleos",
     curso: "Mestrado em Biomedicina Molecular",
     linkedin: "",
@@ -135,9 +135,9 @@ const teamMembers = [
   {
     name: "Tomás Ferraz",
     position: "Vogal",
-    imageUrl: "TFerraz.jpg",
+    imageUrl: "tferraz.jpg",
     sector: "Apoio aos Núcleos",
-    curso: "Licenciatura em Administração Publica",
+    curso: "Licenciatura em Administração Pública",
     linkedin: "",
   },
   {
@@ -184,7 +184,7 @@ const teamMembers = [
   {
     name: "Beatriz Machado",
     position: "Vice-Presidente",
-    imageUrl: "beatriz.jpg",
+    imageUrl: "bia.jpg",
     sector: "Comunicação e Imagem",
     curso: "Mestrado em Design",
     linkedin: "",
@@ -206,9 +206,9 @@ const teamMembers = [
     linkedin: "",
   },
   {
-    name: "Maria Pereira",
+    name: "Maria Queiroga",
     position: "Vogal",
-    imageUrl: "mariaPereira.jpg",
+    imageUrl: "maria_Queiroga.jpg",
     sector: "Comunicação e Imagem",
     curso: "Licenciatura em Marketing",
     linkedin: "",
@@ -216,7 +216,7 @@ const teamMembers = [
   {
     name: "Joana Ferreira",
     position: "Vice-Presidente",
-    imageUrl: "joana_Ferreira.jpg",
+    imageUrl: "joana_ferreira.jpg",
     sector: "Aveiro é Nosso",
     curso:
       "Mestrado em Educação Pré-Escolar e Ensino do 1º Ciclo do Ensino Básico",
@@ -225,7 +225,7 @@ const teamMembers = [
   {
     name: "Bruna Costa",
     position: "Vogal",
-    imageUrl: "Bruna.jpg",
+    imageUrl: "bruna.jpg",
     sector: "Aveiro é Nosso",
     curso: "Mestrado em Marketing ",
     linkedin: "https://www.linkedin.com/in/bruna-costa-a61a37201/",
@@ -233,7 +233,7 @@ const teamMembers = [
   {
     name: "Larissa Cavalcanti",
     position: "Vogal",
-    imageUrl: "larissa",
+    imageUrl: "larissa.jpg",
     sector: "Aveiro é Nosso",
     curso: "Licenciatura em Ciências Biomédicas",
     linkedin: "",
@@ -256,7 +256,7 @@ const teamMembers = [
   },
   {
     name: "Francisca Ferreira",
-    position: "1.ª Secretária",
+    position: "Secretária",
     imageUrl: "francisca.jpg",
     sector: "Mesa da Assembleia Geral",
     curso: "Mestrado em Gestão Comercial",
@@ -264,8 +264,8 @@ const teamMembers = [
   },
   {
     name: "Maria Inês",
-    position: "2.ª Secretária",
-    imageUrl: "mariaines.jpg",
+    position: "Secretária",
+    imageUrl: "maria_Ines.jpg",
     sector: "Mesa da Assembleia Geral",
     curso: "Licenciatura em Matemática ",
     linkedin: "",
@@ -273,7 +273,7 @@ const teamMembers = [
 
   {
     name: "Iara Costa",
-    position: "3.ª Secretária",
+    position: "Secretária",
     imageUrl: "iara.jpg",
     sector: "Mesa da Assembleia Geral",
     curso: "Licenciatura em Biologia",
@@ -297,11 +297,11 @@ const teamMembers = [
       "https://www.linkedin.com/in/mariana-gomes-955a86252?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
-    name: "Lara Macieira",
+    name: "Beatriz Gouveia",
     position: "1.º Secretária",
-    imageUrl: "lara.jpg",
+    imageUrl: "beatriz.jpg",
     sector: "Conselho Fiscal e de Jurisdição",
-    curso: "Licenciatura em Contabilidade ",
+    curso: "Licenciatura em Engenharia do Ambiente",
     linkedin: "",
   },
   {
@@ -313,11 +313,11 @@ const teamMembers = [
     linkedin: "",
   },
   {
-    name: "",
-    position: "Relator",
-    imageUrl: "",
+    name: "Lara Macieira",
+    position: "Relatora",
+    imageUrl: "lara.jpg",
     sector: "Conselho Fiscal e de Jurisdição",
-    curso: "",
+    curso: "Licenciatura em Contabilidade",
     linkedin: "",
   },
 ].map((member) => ({
