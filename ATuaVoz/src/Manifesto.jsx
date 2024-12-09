@@ -55,7 +55,7 @@ export default function Manifesto() {
 
   const toggleLanguage = () => {
     if (language === "PT") {
-      setCurrentPDF(manifestoEN);
+      setCurrentPDF(manifestoPT); // mudar depois quando estiver traduzido
       setLanguage("EN");
     } else {
       setCurrentPDF(manifestoPT);
@@ -98,7 +98,7 @@ export default function Manifesto() {
             <Button
               color="primary"
               className="w-full text-white"
-              onClick={() => openPDF(manifestoEN)}
+              onClick={() => openPDF(manifestoPT)}
             >
               View Manifest [EN]
             </Button>
