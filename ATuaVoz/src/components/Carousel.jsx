@@ -1,10 +1,12 @@
-import React, { useState } from 'react';
-import { Carousel, Typography, Button } from "@material-tailwind/react";
+import  { useState } from 'react';
+import { Carousel, Typography} from "@material-tailwind/react";
 
 // Import your local images (adjust the paths to match your project structure)
-import lona from '../assets/Lander.jpg';
-import cfj from '../assets/CFJ_post.png';
-import mag from '../assets/MAG_post.png';
+import lona from '../assets/carousel_images/Lander.webp';
+import cfj from '../assets/carousel_images/CFJ_post.webp';
+import mag from '../assets/carousel_images/MAG_post.webp';
+
+import PropTypes from "prop-types";
 
 export default function CarouselWithContent() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -29,7 +31,7 @@ export default function CarouselWithContent() {
     <Carousel 
       autoplay={true}
       loop={true}
-      navigation={({ setActiveIndex, activeIndex, length }) => (
+      navigation={({ activeIndex, length }) => (
         <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
           {new Array(length).fill("").map((_, i) => (
             <span
@@ -37,7 +39,6 @@ export default function CarouselWithContent() {
               className={`block h-1 cursor-pointer rounded-2xl transition-all content-[''] ${
                 activeIndex === i ? "w-8 bg-white" : "w-4 bg-white/50"
               }`}
-              onClick={() => setActiveIndex(i)}
             />
           ))}
         </div>
@@ -84,4 +85,17 @@ const CarouselImage = ({ picture_url, title, description, className }) => {
       </div>
     </div>
   );
+};
+
+CarouselImage.propTypes = {
+  picture_url: PropTypes.string.isRequired,
+  title: PropTypes.string,
+  description: PropTypes.string,
+  className: PropTypes.string
+};
+
+CarouselImage.defaultProps = {
+  title: '',
+  description: '',
+  className: ''
 };

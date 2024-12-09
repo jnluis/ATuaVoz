@@ -5,12 +5,11 @@ import CarouselWithContent from "./components/Carousel.jsx";
 export default function LandingPage() {
   return (
     <>
-      <div className="flex flex-col max-h-screen">
-        {" "}
+      <div className="flex flex-col h-screen">
         {/* Flex container */}
         <MyNavbar />
-        <main className="flex flex-col h-full">
-          {" "}
+        <main className="flex-grow">
+          {/* Use flex-grow to make the main content take up the remaining space */}
           <CarouselWithContent />
         </main>
         <MyFooter />
