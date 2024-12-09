@@ -7,7 +7,7 @@ import Manifesto from "./Manifesto";
 function App() {
 
   return (
-    <BrowserRouter basename="/ATuaVoz">
+    <BrowserRouter >
     <Background>
       <Routes>
         <Route path="/" element={<LandingPage />} />
