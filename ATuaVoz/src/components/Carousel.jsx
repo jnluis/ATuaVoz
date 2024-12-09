@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Carousel, Typography, Button } from "@material-tailwind/react";
 
 // Import your local images (adjust the paths to match your project structure)
-import lona from '../assets/Lona.png';
+import lona from '../assets/Lander.jpg';
 import cfj from '../assets/CFJ_post.png';
 import mag from '../assets/MAG_post.png';
 

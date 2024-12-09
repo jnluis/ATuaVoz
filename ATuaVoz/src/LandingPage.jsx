@@ -5,7 +5,7 @@ import CarouselWithContent from "./components/Carousel.jsx";
 export default function LandingPage() {
   return (
     <>
-      <div className="flex flex-col min-h-screen">
+      <div className="flex flex-col max-h-screen">
         {" "}
         {/* Flex container */}
         <MyNavbar />
