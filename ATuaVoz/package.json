@@ -2,7 +2,7 @@
   "name": "atuavoz",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://jnluis.github.io/ATuaVoz/",
+  "homepage": "https://unidospelavoz.pt/",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build && cp dist/index.html dist/404.html",

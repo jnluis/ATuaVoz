@@ -9,7 +9,6 @@ export default function LandingPage() {
         {/* Flex container */}
         <MyNavbar />
         <main className="flex-grow">
-          {/* Use flex-grow to make the main content take up the remaining space */}
           <CarouselWithContent />
         </main>
         <MyFooter />

@@ -1,11 +1,11 @@
-const teamImages = import.meta.glob("./assets/team/*.{jpg,png}", {
+const teamImages = import.meta.glob("./assets/team/webp/*.{jpg,png,webp}", {
   eager: true,
 });
 const teamMembers = [
   {
     name: "Joana Regadas",
     position: "Presidente",
-    imageUrl: "regadas.jpg",
+    imageUrl: "regadas.webp",
     sector: "Presidência",
     curso: "Mestrado em Engenharia Biomédica",
     linkedin: "https://www.linkedin.com/in/joanaregadas/",
@@ -13,7 +13,7 @@ const teamMembers = [
   {
     name: "Carolina Alberto",
     position: "Vice-Presidente Adjunta",
-    imageUrl: "carolina.jpg",
+    imageUrl: "carolina.webp",
     sector: "Presidência",
     curso: "Mestrado em Engenharia Biomédica",
     linkedin: "",
@@ -21,7 +21,7 @@ const teamMembers = [
   {
     name: "Pedro Rocha",
     position: "Tesoureiro",
-    imageUrl: "rocha.jpg",
+    imageUrl: "rocha.webp",
     sector: "Presidência",
     curso: "Mestrado em Engenharia de Computadores e Telemática",
     linkedin: "https://www.linkedin.com/in/pedro-lebre-da-rocha/",
@@ -29,7 +29,7 @@ const teamMembers = [
   {
     name: "Guilherme Carola",
     position: "Tesoureiro Adjunto",
-    imageUrl: "carola.jpg", 
+    imageUrl: "carola.webp", 
     sector: "Presidência",
     curso: "Licenciatura em Administração Pública",
     linkedin: "",
@@ -37,7 +37,7 @@ const teamMembers = [
   {
     name: "Hugo Oliveira",
     position: "Secretário Geral",
-    imageUrl: "hugo.jpg",
+    imageUrl: "hugo.webp",
     sector: "Presidência",
     curso: "Mestrado em Engenharia Mecânica",
     linkedin:
@@ -46,7 +46,7 @@ const teamMembers = [
   {
     name: "Francisco Teixeira",
     position: "Vice-Presidente",
-    imageUrl: "kiko.jpg",
+    imageUrl: "kiko.webp",
     sector: "Cultura",
     curso: "Mestrado Integrado em Engenharia Mecânica ",
     linkedin: "https://www.linkedin.com/in/francisco-teixeira-154bbb243",
@@ -54,7 +54,7 @@ const teamMembers = [
   {
     name: "André Vieira",
     position: "Vogal",
-    imageUrl: "vieira.jpg",
+    imageUrl: "vieira.webp",
     sector: "Cultura",
     curso: "Mestrado em Engenharia Mecânica",
     linkedin: "https://www.linkedin.com/in/andré-vieira-6257472b8",
@@ -62,7 +62,7 @@ const teamMembers = [
   {
     name: "Mafalda Ribeiro",
     position: "Vogal",
-    imageUrl: "mafalda.jpg",
+    imageUrl: "mafalda.webp",
     sector: "Cultura",
     curso: "Licenciatura em Fisioterapia",
     linkedin: "",
@@ -70,7 +70,7 @@ const teamMembers = [
   {
     name: "Carolina Correia",
     position: "Vice-Presidente",
-    imageUrl: "carol_Correia.jpg",
+    imageUrl: "carol_Correia.webp",
     sector: "Política Educativa",
     curso: "Mestrado em Engenharia e Gestão Industrial",
     linkedin: "https://www.linkedin.com/in/carolinacorreia03",
@@ -78,7 +78,7 @@ const teamMembers = [
   {
     name: "Gonçalo Lourenço",
     position: "Vogal",
-    imageUrl: "gon_Lourenco.jpg",
+    imageUrl: "gon_Lourenco.webp",
     sector: "Política Educativa",
     curso: "Licenciatura em Línguas e Relações Empresariais",
     linkedin: "https://www.linkedin.com/in/gonçalo-lourenço-a6185225a",
@@ -86,7 +86,7 @@ const teamMembers = [
   {
     name: "Ana Rita Carvalhinho",
     position: "Vogal",
-    imageUrl: "ritinha.jpg",
+    imageUrl: "ritinha.webp",
     sector: "Política Educativa",
     curso: "Mestrado em Psicologia da Saúde e Neuropsicologia",
     linkedin: "",
@@ -94,7 +94,7 @@ const teamMembers = [
   {
     name: "Tomás Oliveira",
     position: "Vice-Presidente",
-    imageUrl: "tomas.jpg",
+    imageUrl: "tomas.webp",
     sector: "Desporto e Bem Estar",
     curso: "Mestrado em Engenharia Química",
     linkedin:
@@ -103,7 +103,7 @@ const teamMembers = [
   {
     name: "Francisco Luís",
     position: "Vogal",
-    imageUrl: "chiquinho.jpg",
+    imageUrl: "chiquinho.webp",
     sector: "Desporto e Bem Estar",
     curso: "Licenciatura em Engenharia Eletrotécnica e Computadores",
     linkedin: "https://www.linkedin.com/in/fdominguesluis",
@@ -111,7 +111,7 @@ const teamMembers = [
   {
     name: "Matilde Pilar",
     position: "Vogal",
-    imageUrl: "pilar.jpg",
+    imageUrl: "pilar.webp",
     sector: "Desporto e Bem Estar",
     curso: "Mestrado em Engenharia de Materiais ",
     linkedin: "https://www.linkedin.com/in/matilde-pilar-2029b6276/",
@@ -119,7 +119,7 @@ const teamMembers = [
   {
     name: "Ana Sofia Delgado",
     position: "Vice-Presidente",
-    imageUrl: "sofia.jpg",
+    imageUrl: "sofia.webp",
     sector: "Apoio aos Núcleos",
     curso: "Mestrado em Biomedicina Molecular",
     linkedin: "",
@@ -127,7 +127,7 @@ const teamMembers = [
   {
     name: "João Luís",
     position: "Vogal",
-    imageUrl: "joao.jpg",
+    imageUrl: "joao.webp",
     sector: "Apoio aos Núcleos",
     curso: "Mestrado em Cibersegurança",
     linkedin: "",
@@ -135,7 +135,7 @@ const teamMembers = [
   {
     name: "Tomás Ferraz",
     position: "Vogal",
-    imageUrl: "tferraz.jpg",
+    imageUrl: "tferraz.webp",
     sector: "Apoio aos Núcleos",
     curso: "Licenciatura em Administração Pública",
     linkedin: "",
@@ -143,7 +143,7 @@ const teamMembers = [
   {
     name: "Luciana Santos",
     position: "Vice-Presidente",
-    imageUrl: "luciana.jpg",
+    imageUrl: "luciana.webp",
     sector: "Administração Interna",
     curso: "Lincenciatura em Engenharia Química",
     linkedin: "https://www.linkedin.com/in/lucianasantos01",
@@ -151,7 +151,7 @@ const teamMembers = [
   {
     name: "Francisco Domingues",
     position: "Vogal",
-    imageUrl: "chico.jpg",
+    imageUrl: "chico.webp",
     sector: "Administração Interna",
     curso: "Licenciatura em Gestão e Planeamento em Turismo",
     linkedin: "",
@@ -159,7 +159,7 @@ const teamMembers = [
   {
     name: "José Abilheira",
     position: "Vogal",
-    imageUrl: "abilheira.jpg",
+    imageUrl: "abilheira.webp",
     sector: "Administração Interna",
     curso: "Licenciatura em Multimédia e Tecnologias da Comunicação",
     linkedin: "",
@@ -167,7 +167,7 @@ const teamMembers = [
   {
     name: "Vasco Carreira",
     position: "Vogal",
-    imageUrl: "vasco.jpg",
+    imageUrl: "vasco.webp",
     sector: "Administração Interna",
     curso: "Mestrado em Engenharia Aeroespacial",
     linkedin: "https://www.linkedin.com/in/vasco-carreira-88a25a266/",
@@ -175,7 +175,7 @@ const teamMembers = [
   {
     name: "Tiago Coelho",
     position: "Vogal",
-    imageUrl: "tiago.jpg",
+    imageUrl: "tiago.webp",
     sector: "Administração Interna",
     curso: "Licenciatura em Engenharia Civil",
     linkedin:
@@ -184,7 +184,7 @@ const teamMembers = [
   {
     name: "Beatriz Machado",
     position: "Vice-Presidente",
-    imageUrl: "bia.jpg",
+    imageUrl: "bia.webp",
     sector: "Comunicação e Imagem",
     curso: "Mestrado em Design",
     linkedin: "",
@@ -192,7 +192,7 @@ const teamMembers = [
   {
     name: "Tiago Eusébio",
     position: "Vogal",
-    imageUrl: "eusebio.jpg",
+    imageUrl: "eusebio.webp",
     sector: "Comunicação e Imagem",
     curso: "Mestrado em Engenharia e Design de Produto",
     linkedin: "https://www.linkedin.com/in/tiago-eus%C3%A9bio-4b276b264/",
@@ -200,7 +200,7 @@ const teamMembers = [
   {
     name: "Letícia Carvalho",
     position: "Vogal",
-    imageUrl: "leticia.jpg",
+    imageUrl: "leticia.webp",
     sector: "Comunicação e Imagem",
     curso: "Licenciatura em Multimédia e Tecnologias da Comunicação",
     linkedin: "",
@@ -208,7 +208,7 @@ const teamMembers = [
   {
     name: "Maria Queiroga",
     position: "Vogal",
-    imageUrl: "maria_Queiroga.jpg",
+    imageUrl: "maria_Queiroga.webp",
     sector: "Comunicação e Imagem",
     curso: "Licenciatura em Marketing",
     linkedin: "",
@@ -216,7 +216,7 @@ const teamMembers = [
   {
     name: "Joana Ferreira",
     position: "Vice-Presidente",
-    imageUrl: "joana_ferreira.jpg",
+    imageUrl: "joana_ferreira.webp",
     sector: "Aveiro é Nosso",
     curso:
       "Mestrado em Educação Pré-Escolar e Ensino do 1º Ciclo do Ensino Básico",
@@ -225,7 +225,7 @@ const teamMembers = [
   {
     name: "Bruna Costa",
     position: "Vogal",
-    imageUrl: "bruna.jpg",
+    imageUrl: "bruna.webp",
     sector: "Aveiro é Nosso",
     curso: "Mestrado em Marketing ",
     linkedin: "https://www.linkedin.com/in/bruna-costa-a61a37201/",
@@ -233,7 +233,7 @@ const teamMembers = [
   {
     name: "Larissa Cavalcanti",
     position: "Vogal",
-    imageUrl: "larissa.jpg",
+    imageUrl: "larissa.webp",
     sector: "Aveiro é Nosso",
     curso: "Licenciatura em Ciências Biomédicas",
     linkedin: "",
@@ -241,7 +241,7 @@ const teamMembers = [
   {
     name: "Inês Filipe",
     position: "Presidente",
-    imageUrl: "fifi.jpg",
+    imageUrl: "fifi.webp",
     sector: "Mesa da Assembleia Geral",
     curso: "Mestrado em Ensino de matemática no 3º ciclo e secundário",
     linkedin: "",
@@ -249,7 +249,7 @@ const teamMembers = [
   {
     name: "Nânci Marques",
     position: "Vice-Presidente",
-    imageUrl: "nanci.jpg",
+    imageUrl: "nanci.webp",
     sector: "Mesa da Assembleia Geral",
     curso: "Mestrado em Engenharia Geológica",
     linkedin: "https://www.linkedin.com/in/n%C3%A2nci-jesus/",
@@ -257,7 +257,7 @@ const teamMembers = [
   {
     name: "Francisca Ferreira",
     position: "Secretária",
-    imageUrl: "francisca.jpg",
+    imageUrl: "francisca.webp",
     sector: "Mesa da Assembleia Geral",
     curso: "Mestrado em Gestão Comercial",
     linkedin: "https://www.linkedin.com/in/francisca-ferreira-425345268",
@@ -265,7 +265,7 @@ const teamMembers = [
   {
     name: "Maria Inês",
     position: "Secretária",
-    imageUrl: "maria_Ines.jpg",
+    imageUrl: "maria_Ines.webp",
     sector: "Mesa da Assembleia Geral",
     curso: "Licenciatura em Matemática ",
     linkedin: "",
@@ -274,7 +274,7 @@ const teamMembers = [
   {
     name: "Iara Costa",
     position: "Secretária",
-    imageUrl: "iara.jpg",
+    imageUrl: "iara.webp",
     sector: "Mesa da Assembleia Geral",
     curso: "Licenciatura em Biologia",
     linkedin: "",
@@ -282,7 +282,7 @@ const teamMembers = [
   {
     name: "Bernardo Ferreira",
     position: "Presidente",
-    imageUrl: "bernardo.jpg",
+    imageUrl: "bernardo.webp",
     sector: "Conselho Fiscal e de Jurisdição",
     curso: "Programa Doutoral em Bioquímica",
     linkedin: "https://www.linkedin.com/in/bernardo-ferreira-6b86451a3/",
@@ -290,7 +290,7 @@ const teamMembers = [
   {
     name: "Mariana Gomes",
     position: "Vice-Presidente",
-    imageUrl: "mariana_gomes.jpg",
+    imageUrl: "mariana_gomes.webp",
     sector: "Conselho Fiscal e de Jurisdição",
     curso: "Mestrado em Gestão",
     linkedin:
@@ -299,7 +299,7 @@ const teamMembers = [
   {
     name: "Beatriz Gouveia",
     position: "1.º Secretária",
-    imageUrl: "beatriz.jpg",
+    imageUrl: "beatriz.webp",
     sector: "Conselho Fiscal e de Jurisdição",
     curso: "Licenciatura em Engenharia do Ambiente",
     linkedin: "",
@@ -307,7 +307,7 @@ const teamMembers = [
   {
     name: "Lourenço Mota",
     position: "2° Secretário",
-    imageUrl: "lourenco.jpg",
+    imageUrl: "lourenco.webp",
     sector: "Conselho Fiscal e de Jurisdição",
     curso: "Licenciatura em Design de Produto e Tecnologia",
     linkedin: "",
@@ -315,14 +315,14 @@ const teamMembers = [
   {
     name: "Lara Macieira",
     position: "Relatora",
-    imageUrl: "lara.jpg",
+    imageUrl: "lara.webp",
     sector: "Conselho Fiscal e de Jurisdição",
     curso: "Licenciatura em Contabilidade",
     linkedin: "",
   },
 ].map((member) => ({
   ...member,
-  imageUrl: teamImages[`./assets/team/${member.imageUrl}`]?.default || "",
+  imageUrl: teamImages[`./assets/team/webp/${member.imageUrl}`]?.default || "",
 }));
 
 export { teamImages, teamMembers };

@@ -48,7 +48,7 @@ export default function MyNavbar() {
             isMenuOpen ? "absolute left-1/2 transform -translate-x-1/2" : ""
           }`}
         >
-          <Link color="foreground" href="/ATuaVoz/">
+          <Link color="foreground" href="/">
           <img
               src={asset4}
               alt="Logo da Lista"
