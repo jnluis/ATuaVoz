@@ -51,7 +51,7 @@ export default {
         },
       },
       color: {
-        value: "#0000ff",
+        value: ["#0000ff", "#ff0000"],
         animation: {
           h: {
             speed: 20,
@@ -60,7 +60,7 @@ export default {
       },
       links: {
         color: {
-          value: "#0000ff",
+          value: ["#0000ff", "#ff0000"],
         },
         opacity: 0.4,
       },
@@ -83,7 +83,7 @@ export default {
           enable: true,
           area: 1250,
         },
-        value: 80,
+        value: 90,
       },
       opacity: {
         random: {
@@ -99,16 +99,16 @@ export default {
         },
       },
       shape: {
-        type: "circle",
+        type: "square",
       },
       size: {
         random: {
           enable: true,
-          minimumValue: 2,
+          minimumValue: 3,
         },
         value: {
-          min: 2,
-          max: 3,
+          min: 3,
+          max: 4,
         },
       },
     },

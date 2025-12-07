@@ -10,8 +10,8 @@ import MyPDFReader from "./components/Reader";
 import { FaTriangleExclamation } from "react-icons/fa6";
 
 // Import your PDF files
-import manifestoPT from "./assets/ManifestoPT.pdf";
-import manifestoEN from "./assets/ManifestoENG.pdf";
+import manifestoPT from "./assets/ManifestoPT_26.pdf";
+import manifestoEN from "./assets/ManifestoENG_26.pdf";
 
 export default function Manifesto() {
   const [currentPDF, setCurrentPDF] = useState(manifestoPT);
