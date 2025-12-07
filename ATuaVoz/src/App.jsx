@@ -11,7 +11,8 @@ function App() {
     <Background>
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route path="/equipa" element={<Equipa />} />
+        <Route path="/equipa25" element={<Equipa />} />
+        <Route path="/equipa26" element={<Equipa />} />
         <Route path="/manifesto" element={<Manifesto/>} />
       </Routes>
       </Background>

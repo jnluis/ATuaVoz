@@ -8,7 +8,7 @@ export default function Footer() {
         {/* Social Media Icons */}
         <div className="flex space-x-4 items-center">
           <p className="text-xs md:text-base text-black dark:text-white">
-            Lista A - Unidos pela Voz, Movidos pelo Agora 2025
+            Lista A - Unidos pela Voz 2026
           </p>
           <Link isExternal color="danger" href="http://www.instagram.com/unidos.pela.voz/">
             <IoLogoInstagram size={24} />

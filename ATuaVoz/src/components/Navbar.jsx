@@ -31,7 +31,7 @@ export default function MyNavbar() {
   }, [isDarkMode]);
 
   const navLinks = [
-    { label: "Equipa", href: "equipa" },
+    { label: "Equipa", href: "equipa26" },
     { label: "Manifestos", href: "manifesto" },
   ];
 

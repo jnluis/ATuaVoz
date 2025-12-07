@@ -1,7 +1,7 @@
-const teamImages = import.meta.glob("./assets/team/webp/*.{jpg,png,webp}", {
+const teamImages25 = import.meta.glob("./assets/team/webp/*.{jpg,png,webp}", {
   eager: true,
 });
-const teamMembers = [
+const teamMembers25 = [
   {
     name: "Joana Regadas",
     position: "Presidente",
@@ -322,7 +322,7 @@ const teamMembers = [
   },
 ].map((member) => ({
   ...member,
-  imageUrl: teamImages[`./assets/team/webp/${member.imageUrl}`]?.default || "",
+  imageUrl: teamImages25[`./assets/team/webp/${member.imageUrl}`]?.default || "",
 }));
 
-export { teamImages, teamMembers };
+export { teamImages25, teamMembers25 };

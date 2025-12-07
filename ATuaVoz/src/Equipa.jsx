@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useLocation } from "react-router-dom";
 import MyNavbar from "./components/Navbar";
 import MyFooter from "./components/Footer";
 import {
@@ -10,20 +11,25 @@ import {
   Image,
 } from "@nextui-org/react";
 import { IoLogoLinkedin } from "react-icons/io5";
-import { teamMembers } from "./team";
+import { teamMembers25 } from "./team25";
+import { teamMembers26 } from "./team26";
 
 const Team = () => {
+  const location = useLocation();
   const [selectedSector, setSelectedSector] = useState("Todos os setores");
+
+  const isTeam26 = location.pathname === "/equipa26";
+  const currentTeamMembers = isTeam26 ? teamMembers26 : teamMembers25;
 
   const sectors = [
     "Todos os setores",
-    ...new Set(teamMembers.map((member) => member.sector)),
+    ...new Set(currentTeamMembers.map((member) => member.sector)),
   ];
 
   const filteredMembers =
     selectedSector === "Todos os setores"
-      ? teamMembers
-      : teamMembers.filter((member) => member.sector === selectedSector);
+      ? currentTeamMembers
+      : currentTeamMembers.filter((member) => member.sector === selectedSector);
 
   return (
     <>
@@ -31,6 +37,12 @@ const Team = () => {
         <MyNavbar />
         <main className="flex-1 flex flex-col items-center">
           <div className="container mx-auto p-4">
+            {!isTeam26 && (
+              <h1 className="text-4xl font-bold mb-6 text-center">
+                Equipa 2025
+              </h1>
+            )}
+
             {/* Filter Button */}
             <div className="mb-6 flex justify-center">
               <Select
@@ -57,7 +69,9 @@ const Team = () => {
               .map((sector) => (
                 <div key={sector} className="mb-6">
                   {sector !== "Todos os setores" && (
-                    <h2 className="text-3xl font-semibold mb-4 text-center">{sector}</h2>
+                    <h2 className="text-3xl font-semibold mb-4 text-center">
+                      {sector}
+                    </h2>
                   )}
                   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                     {filteredMembers
