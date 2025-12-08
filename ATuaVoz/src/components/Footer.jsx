@@ -1,5 +1,5 @@
 import { IoLogoInstagram, IoLogoGithub } from "react-icons/io5";
-import { Link } from "@nextui-org/react";
+import { Link } from "@heroui/react";
 
 export default function Footer() {
   return (

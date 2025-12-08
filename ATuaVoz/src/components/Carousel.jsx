@@ -1,16 +1,14 @@
-import  { useState } from 'react';
-import { Carousel, Typography} from "@material-tailwind/react";
+import { useState, useEffect } from 'react';
+import PropTypes from "prop-types";
+import { FaArrowLeft,FaArrowRight } from "react-icons/fa";
 
-// Import your local images (adjust the paths to match your project structure)
 import lona from '../assets/carousel_images/Lander.webp';
 import cfj from '../assets/carousel_images/CFJ_post.webp';
 import mag from '../assets/carousel_images/MAG_post.webp';
 
-import PropTypes from "prop-types";
-
 export default function CarouselWithContent() {
   const [activeIndex, setActiveIndex] = useState(0);
-  
+
   // Array of your local images with additional scaling options
   const images = [
     { 
@@ -27,33 +25,81 @@ export default function CarouselWithContent() {
     }
   ];
 
+  // Auto-play functionality
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((current) => (current + 1) % images.length);
+    }, 6500); // Change slide every 5 seconds
+
+    return () => clearInterval(interval);
+  }, [images.length]);
+
+  const goToSlide = (index) => {
+    setActiveIndex(index);
+  };
+
+  const goToPrevious = () => {
+    setActiveIndex((current) => 
+      current === 0 ? images.length - 1 : current - 1
+    );
+  };
+
+  const goToNext = () => {
+    setActiveIndex((current) => (current + 1) % images.length);
+  };
+
   return (
-    <Carousel
-    autoplay={true}
-    loop={true}
-    navigation={({ activeIndex, length }) => (
-      <div className="absolute bottom-24 left-2/4 z-50 flex -translate-x-2/4 gap-2">
-        {new Array(length).fill("").map((_, i) => (
-          <span
+    <div className="relative w-full h-full overflow-hidden">
+      {/* Carousel Images */}
+      <div className="relative h-full w-full">
+        {images.map((image, index) => (
+          <div
+            key={index}
+            className={`absolute inset-0 transition-opacity duration-1000 ${
+              index === activeIndex ? 'opacity-100' : 'opacity-0'
+            }`}
+          >
+            <CarouselImage 
+              picture_url={image.url}
+              title={image.title}
+              description={image.description}
+              className={image.className}
+            />
+          </div>
+        ))}
+      </div>
+
+      {/* Navigation Arrows */}
+      <button
+        onClick={goToPrevious}
+        className="absolute left-4 top-1/2 -translate-y-1/2 z-50 bg-black/30 hover:bg-black/50 text-white p-2 rounded-full transition-all"
+        aria-label="Previous slide"
+      >
+        <FaArrowLeft size={24} />
+      </button>
+
+      <button
+        onClick={goToNext}
+        className="absolute right-4 top-1/2 -translate-y-1/2 z-50 bg-black/30 hover:bg-black/50 text-white p-2 rounded-full transition-all"
+        aria-label="Next slide"
+      >
+        <FaArrowRight size={24} />
+      </button>
+
+      {/* Navigation Dots */}
+      <div className="absolute bottom-24 left-1/2 z-50 flex -translate-x-1/2 gap-2">
+        {images.map((_, i) => (
+          <button
             key={i}
-            className={`block h-2 cursor-pointer rounded-2xl transition-all content-[''] ${
+            onClick={() => goToSlide(i)}
+            className={`block h-2 cursor-pointer rounded-2xl transition-all ${
               activeIndex === i ? "w-8 bg-white" : "w-4 bg-white/50"
             }`}
+            aria-label={`Go to slide ${i + 1}`}
           />
         ))}
       </div>
-    )}
-  >
-      {images.map((image, index) => (
-        <CarouselImage 
-          key={index}
-          picture_url={image.url}
-          title={image.title}
-          description={image.description}
-          className={image.className}
-        />
-      ))}
-    </Carousel>
+    </div>
   );
 }
 
@@ -62,27 +108,25 @@ const CarouselImage = ({ picture_url, title, description, className }) => {
     <div className="relative h-full w-full flex justify-center items-center">
       <img
         src={picture_url}
-        alt={title}
+        alt={title || "Carousel image"}
         className={`max-h-[600px] ${className}`}
       />
-      <div className="absolute inset-0 grid h-full w-full place-items-center">
-        <div className="w-3/4 text-center md:w-2/4">
-          <Typography
-            variant="h1"
-            color="white"
-            className="mb-4 text-3xl md:text-4xl lg:text-5xl"
-          >
-            {title}
-          </Typography>
-          <Typography
-            variant="lead"
-            color="white"
-            className="mb-12 opacity-80"
-          >
-            {description}
-          </Typography>
+      {(title || description) && (
+        <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/20">
+          <div className="w-3/4 text-center md:w-2/4">
+            {title && (
+              <h1 className="mb-4 text-3xl md:text-4xl lg:text-5xl font-bold text-white">
+                {title}
+              </h1>
+            )}
+            {description && (
+              <p className="mb-12 text-lg text-white opacity-80">
+                {description}
+              </p>
+            )}
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 };

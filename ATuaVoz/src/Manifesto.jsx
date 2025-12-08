@@ -3,7 +3,7 @@ import {
   Card, 
   CardBody, 
   Button 
-} from "@nextui-org/react";
+} from "@heroui/react";
 import MyNavbar from "./components/Navbar";
 import MyFooter from "./components/Footer";
 import MyPDFReader from "./components/Reader";

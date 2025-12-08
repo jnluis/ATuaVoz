@@ -8,7 +8,7 @@ export default function LandingPage() {
       <div className="flex flex-col h-screen">
         {/* Flex container */}
         <MyNavbar />
-        <main className="flex-grow">
+        <main className="grow">
           <CarouselWithContent />
         </main>
         <MyFooter />

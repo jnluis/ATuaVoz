@@ -9,7 +9,7 @@ import {
   CardHeader,
   CardBody,
   Image,
-} from "@nextui-org/react";
+} from "@heroui/react";
 import { IoLogoLinkedin } from "react-icons/io5";
 import { teamMembers25 } from "./team25";
 import { teamMembers26 } from "./team26";

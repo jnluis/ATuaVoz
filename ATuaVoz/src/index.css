@@ -1,15 +1,24 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+@plugin './hero.ts';
+
+ @source '../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}';
+ @custom-variant dark (&:is(.dark *));
 
 @layer base {
-  @layer base {
-    @font-face {
-      font-family: 'Roboto';
-      font-style: normal;
-      font-weight: 400;
-      src: url('/fonts/roboto-v27-latin-regular.eot'); /* IE9 Compat Modes */
-    }
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/fonts/roboto-v27-latin-regular.eot');
   }
 }
 
+@theme {
+  --font-sans: Helvetica, Arial, sans-serif;
+  
+  --color-back: #f6f6f6;
+  --color-nav: #262626;
+  --color-hero: #464646;
+  --color-secondary: #ffffff;
+  --color-primary: #0000ff;
+}

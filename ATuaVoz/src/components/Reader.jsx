@@ -10,7 +10,7 @@ import {
   CurrentPage
 } from "@fileforge/pdfreader";
 import PropTypes from "prop-types";
-import { Button } from "@nextui-org/react";
+import { Button } from "@heroui/react";
 
 const PDFReader = ({ fileURL, language, toggleLanguage }) => {
   return (
@@ -21,9 +21,9 @@ const PDFReader = ({ fileURL, language, toggleLanguage }) => {
             bg-white/60 dark:bg-black/60 backdrop-blur-md">
             <div className="flex items-center gap-2">
               <span className="hidden sm:inline text-gray-600">Zoom</span>
-              <ZoomOut className="px-2 py-1 text-gray-600 border-1 border-solid border-gray-600 rounded-full text-base">-</ZoomOut>
+              <ZoomOut className="px-2 py-1 text-gray-600 border border-solid border-gray-600 rounded-full text-base">-</ZoomOut>
               <CurrentZoom className="bg-white rounded-full px-2 py-1 border border-gray-600 text-center w-12 text-xs sm:text-sm" />
-              <ZoomIn className="px-2 py-1 text-gray-600 border-1 border-solid border-gray-600 rounded-full text-sm">+</ZoomIn>
+              <ZoomIn className="px-2 py-1 text-gray-600 border border-solid border-gray-600 rounded-full text-sm">+</ZoomIn>
             </div>
             
             <div className="flex items-center gap-2">

@@ -8,7 +8,7 @@ import {
   NavbarMenu,
   NavbarMenuItem,
   Link,
-} from "@nextui-org/react";
+} from "@heroui/react";
 import { IoMoon, IoSunny } from "react-icons/io5";
 import asset4 from "../assets/logos/asset4.png";
 
