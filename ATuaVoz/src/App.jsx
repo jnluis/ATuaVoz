@@ -3,6 +3,7 @@ import LandingPage from './LandingPage';
 import Equipa from './Equipa';
 import Background from "./Background"; 
 import Manifesto from "./Manifesto";
+import Sugestoes from "./Sugestoes";
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
         <Route path="/equipa25" element={<Equipa />} />
         <Route path="/equipa26" element={<Equipa />} />
         <Route path="/manifesto" element={<Manifesto/>} />
+        <Route path="/sugestoes" element={<Sugestoes />} />
       </Routes>
       </Background>
     </BrowserRouter>

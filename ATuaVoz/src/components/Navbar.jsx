@@ -33,6 +33,7 @@ export default function MyNavbar() {
   const navLinks = [
     { label: "Equipa", href: "equipa26" },
     { label: "Manifestos", href: "manifesto" },
+    { label: "Sugestões", href: "sugestoes"}
   ];
 
   return (
