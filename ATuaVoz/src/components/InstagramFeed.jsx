@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { FaInstagram, FaExternalLinkAlt } from "react-icons/fa";
 import { HiMiniSquare2Stack } from "react-icons/hi2";
-import instagramPosts from "../data/instagramPosts.json";
+import instagramPosts from "../data/instagramPosts.js";
 
 export default function InstagramFeed() {
   const [posts, setPosts] = useState([]);
