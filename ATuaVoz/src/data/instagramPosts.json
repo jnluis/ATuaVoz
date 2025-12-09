@@ -1,44 +1,9 @@
 [
-    {
-    "id": "6",  
-    "image": "/src/assets/instagram/post2.webp",  
-    "url": "https://www.instagram.com/p/ABC123/",  
-    "type": "image", 
-    "date": "2024-12-08"  
-  },
-  {
-    "id": "5",  
-    "image": "/src/assets/instagram/post2.webp",  
-    "url": "https://www.instagram.com/p/ABC123/",  
-    "type": "image", 
-    "date": "2024-12-08"  
-  },
-  {
-    "id": "4",
-    "image": "/src/assets/instagram/post1.webp",
-    "url": "https://www.instagram.com/p/DH4FkmiKI6q/?img_index=4",
-    "type": "image",
-    "date": "2024-12-01"
-  },
-  {
-    "id": "3",
-    "image": "/src/assets/instagram/post3.webp",
-    "url": "https://www.instagram.com/p/DRX8dl8CH2U/?img_index=1",
-    "type": "video",
-    "date": "2024-11-25"
-  },
-  {
-    "id": "2",
-    "image": "/src/assets/instagram/post2.webp",
-    "url": "https://www.instagram.com/p/DH4FkmiKI6q/?img_index=4",
-    "type": "image",
-    "date": "2024-11-18"
-  },
   {
     "id": "1",
     "image": "/src/assets/instagram/post1.webp",
     "url": "https://www.instagram.com/p/DR2grAHiHQb/?img_index=1",
     "type": "image",
     "date": "2024-12-04"
-  }
+  } 
 ]
