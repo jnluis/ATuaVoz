@@ -11,8 +11,8 @@ import {
   Image,
 } from "@heroui/react";
 import { IoLogoLinkedin } from "react-icons/io5";
-import { teamMembers25 } from "./team25";
-import { teamMembers26 } from "./team26";
+import { teamMembers25 } from "./data/team25";
+import { teamMembers26 } from "./data/team26";
 
 const Team = () => {
   const location = useLocation();

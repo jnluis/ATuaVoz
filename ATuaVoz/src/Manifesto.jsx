@@ -89,15 +89,13 @@ export default function Manifesto() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl px-4">
             <Button
-              color="primary"
-              className="w-full text-white"
+              className="w-full text-white bg-gradient-to-r from-warning to-primary"
               onClick={() => openPDF(manifestoPT)}
             >
               Consultar Manifesto [PT]
             </Button>
             <Button
-              color="primary"
-              className="w-full text-white"
+              className="w-full text-white bg-gradient-to-r from-warning to-primary"
               onClick={() => openPDF(manifestoEN)}
             >
               View Manifest [EN]

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import PropTypes from "prop-types";
-import { FaArrowLeft,FaArrowRight } from "react-icons/fa";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 import lona from '../assets/carousel_images/Lander.webp';
 import cfj from '../assets/carousel_images/CFJ_post.webp';
@@ -29,7 +29,7 @@ export default function CarouselWithContent() {
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveIndex((current) => (current + 1) % images.length);
-    }, 6500); // Change slide every 5 seconds
+    }, 6500); // Change slide every 6.5 seconds
 
     return () => clearInterval(interval);
   }, [images.length]);
@@ -49,7 +49,8 @@ export default function CarouselWithContent() {
   };
 
   return (
-    <div className="relative w-full h-full overflow-hidden">
+    // Tá com altura específica de acordo com as imagens que temos
+    <div className="relative w-full h-[600px] overflow-hidden">
       {/* Carousel Images */}
       <div className="relative h-full w-full">
         {images.map((image, index) => (
@@ -87,7 +88,7 @@ export default function CarouselWithContent() {
       </button>
 
       {/* Navigation Dots */}
-      <div className="absolute bottom-24 left-1/2 z-50 flex -translate-x-1/2 gap-2">
+      <div className="absolute bottom-2 left-1/2 z-50 flex -translate-x-1/2 gap-2">
         {images.map((_, i) => (
           <button
             key={i}

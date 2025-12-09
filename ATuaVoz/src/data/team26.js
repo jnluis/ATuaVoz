@@ -1,4 +1,4 @@
-const teamImages26 = import.meta.glob("./assets/team/webp/*.{jpg,png,webp}", {
+const teamImages26 = import.meta.glob("../assets/team26/webp/*.{jpg,png,webp}", {
   eager: true,
 });
 const teamMembers26 = [
@@ -322,7 +322,7 @@ const teamMembers26 = [
   },
 ].map((member) => ({
   ...member,
-  imageUrl: teamImages26[`./assets/team/webp/${member.imageUrl}`]?.default || "",
+  imageUrl: teamImages26[`../assets/team26/webp/${member.imageUrl}`]?.default || "",
 }));
 
 export { teamImages26, teamMembers26 };

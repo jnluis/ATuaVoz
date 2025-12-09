@@ -178,10 +178,9 @@ const SuggestionPage = () => {
                 )}
 
                 <Button
-                  color="primary"
                   size="lg"
                   isLoading={isSubmitting}
-                  className="font-semibold"
+                  className="font-semibold bg-gradient-to-r from-warning to-primary text-white"
                   onClick={handleSubmit}
                 >
                   {isSubmitting ? "A enviar..." : "Enviar Sugestão"} <FaPaperPlane />

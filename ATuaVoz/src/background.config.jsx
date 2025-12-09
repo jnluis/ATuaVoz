@@ -51,7 +51,7 @@ export default {
         },
       },
       color: {
-        value: ["#0000ff", "#ff0000"],
+        value: ["#0000ff", "#1fa4dd"],
         animation: {
           h: {
             speed: 20,
@@ -60,7 +60,7 @@ export default {
       },
       links: {
         color: {
-          value: ["#0000ff", "#ff0000"],
+          value: ["#0000ff", "#1fa4dd"],
         },
         opacity: 0.4,
       },

@@ -32,9 +32,8 @@ const PDFReader = ({ fileURL, language, toggleLanguage }) => {
             </div>
             
             <Button
-              color="primary"
               size="sm"
-              className="ml-2 px-3 py-1 text-xs sm:text-sm text-white"
+              className="ml-2 px-3 py-1 text-xs sm:text-sm text-white bg-gradient-to-r from-warning to-primary"
               onClick={toggleLanguage}
             >
               {language === "PT" 
