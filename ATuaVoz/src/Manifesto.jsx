@@ -87,26 +87,26 @@ export default function Manifesto() {
             <h1 className="text-3xl font-bold">Manifestos</h1>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl px-4">
+          <div className="grid grid-cols-1 gap-4 max-w-4xl px-4">
             <Button
               className="w-full text-white bg-gradient-to-r from-warning to-primary"
               onClick={() => openPDF(manifestoPT)}
             >
               Consultar Manifesto [PT]
             </Button>
-            <Button
+            {/* <Button
               className="w-full text-white bg-gradient-to-r from-warning to-primary"
               onClick={() => openPDF(manifestoEN)}
             >
               View Manifest [EN]
-            </Button>
+            </Button> */}
           </div>
           
           <div className="w-full max-w-4xl mt-6 px-4">
             <MyPDFReader
               fileURL={currentPDF}
-              language={language}
-              toggleLanguage={toggleLanguage}
+              // language={language}
+              // toggleLanguage={toggleLanguage}
             />
           </div>
         </main>

@@ -1,4 +1,4 @@
-const teamImages26 = import.meta.glob("../assets/team26/webp/*.{jpg,png,webp}", {
+const teamImages26 = import.meta.glob("../assets/team26/*.{jpg,png,webp}", {
   eager: true,
 });
 const teamMembers26 = [
@@ -76,9 +76,9 @@ const teamMembers26 = [
     linkedin: "https://www.linkedin.com/in/rodrigo-f-duarte",
   },
   {
-    name: "Gonaçalo Lourenço",
+    name: "Gonçalo Lourenço",
     position: "Vice-Presidente",
-    imageUrl: "gon_Lourenco.webp",
+    imageUrl: "gon_lourenco.webp",
     sector: "Política Educativa",
     curso: "Mestrado em Ciência Política",
     linkedin: "https://www.linkedin.com/in/gonçalo-lourenço-a6185225a",
@@ -256,7 +256,7 @@ const teamMembers26 = [
   },
   {
     name: "Lourenço Mota",
-    position: "Secretária",
+    position: "Secretário",
     imageUrl: "lourenco.webp",
     sector: "Mesa da Assembleia Geral",
     curso: "Licenciatura em Design de Produto e Tecnologia",
@@ -297,8 +297,8 @@ const teamMembers26 = [
       "",
   },
   {
-    name: "Ana Margarida Machado e Silva",
-    position: "1.º Secretária",
+    name: "Margarida Silva",
+    position: "1.ª Secretária",
     imageUrl: "ana_margarida.webp",
     sector: "Conselho Fiscal e de Jurisdição",
     curso: "Mestrado em Ensino de Português e de Língua Estrangeira no 3º ciclo do Ensino Básico e no Ensino Secundário, na especialidade de Espanhol",
@@ -306,7 +306,7 @@ const teamMembers26 = [
   },
   {
     name: "Catarina Reis",
-    position: "2° Secretário",
+    position: "2.ª Secretária",
     imageUrl: "catarina_reis.webp",
     sector: "Conselho Fiscal e de Jurisdição",
     curso: "Mestrado em Engenharia Geológica",
@@ -322,7 +322,7 @@ const teamMembers26 = [
   },
 ].map((member) => ({
   ...member,
-  imageUrl: teamImages26[`../assets/team26/webp/${member.imageUrl}`]?.default || "",
+  imageUrl: teamImages26[`../assets/team26/${member.imageUrl}`]?.default || "",
 }));
 
 export { teamImages26, teamMembers26 };

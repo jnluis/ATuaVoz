@@ -29,6 +29,8 @@ const SuggestionPage = () => {
     { key: "Administração Interna", label: "Administração Interna" },
     { key: "Apoio aos Núcleos", label: "Apoio aos Núcleos" },
     { key: "Aveiro é Nosso", label: "Aveiro é Nosso" },
+    { key: "Mesa da Assembleia Geral", label: "Mesa da Assembleia Geral" },
+    { key: "Conselho Fiscal e de Jurisdição", label: "Conselho Fiscal e de Jurisdição" }
   ];
 
   // Auto-hide messages after 5 seconds

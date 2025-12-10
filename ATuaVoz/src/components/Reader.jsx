@@ -31,7 +31,7 @@ const PDFReader = ({ fileURL, language, toggleLanguage }) => {
               <CurrentPage className="bg-white rounded-full px-2 py-1 border border-gray-600 text-center w-12 text-xs sm:text-sm" />
             </div>
             
-            <Button
+            {/* <Button
               size="sm"
               className="ml-2 px-3 py-1 text-xs sm:text-sm text-white bg-gradient-to-r from-warning to-primary"
               onClick={toggleLanguage}
@@ -39,7 +39,7 @@ const PDFReader = ({ fileURL, language, toggleLanguage }) => {
               {language === "PT" 
                 ? "Switch to English" 
                 : "Mudar para Português"}
-            </Button>
+            </Button> */}
           </div>
           
           <Viewport className="w-full">

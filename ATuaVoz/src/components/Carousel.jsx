@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import PropTypes from "prop-types";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
-import lona from '../assets/carousel_images/Lander.webp';
+import lona from '../assets/carousel_images/lander26.webp';
 import cfj from '../assets/carousel_images/CFJ_post.webp';
 import mag from '../assets/carousel_images/MAG_post.webp';
 
