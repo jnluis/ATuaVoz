@@ -4,8 +4,16 @@ import post3 from '../assets/instagram/post3.webp';
 import post4 from '../assets/instagram/post4.webp';
 import post5 from '../assets/instagram/post5.webp';
 import post6 from '../assets/instagram/post6.webp';
+import post7 from '../assets/instagram/post7.webp';
 
 const instagramPosts = [
+    {
+    id: "7",
+    image: post7,
+    url: "https://www.instagram.com/p/DSI3IK2iMLC/?img_index=1",
+    type: "image",
+    date: "2024-12-12"
+  },
   {
     id: "6",
     image: post6,
