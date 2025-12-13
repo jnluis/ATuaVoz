@@ -5,9 +5,33 @@ import post4 from '../assets/instagram/post4.webp';
 import post5 from '../assets/instagram/post5.webp';
 import post6 from '../assets/instagram/post6.webp';
 import post7 from '../assets/instagram/post7.webp';
+import post8 from '../assets/instagram/post8.webp';
+import post9 from '../assets/instagram/post9.webp';
+import post10 from '../assets/instagram/post10.webp';
 
 const instagramPosts = [
-    {
+  {
+    id: "10",
+    image: post10,
+    url: "https://www.instagram.com/p/DSI3IK2iMLC/?img_index=1",
+    type: "image",
+    date: "2024-12-12"
+  },
+  {
+    id: "9",
+    image: post9,
+    url: "https://www.instagram.com/p/DSI3IK2iMLC/?img_index=1",
+    type: "image",
+    date: "2024-12-12"
+  },
+  {
+    id: "8",
+    image: post8,
+    url: "https://www.instagram.com/p/DSI3IK2iMLC/?img_index=1",
+    type: "image",
+    date: "2024-12-12"
+  },
+  {
     id: "7",
     image: post7,
     url: "https://www.instagram.com/p/DSI3IK2iMLC/?img_index=1",
