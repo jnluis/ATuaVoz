@@ -8,8 +8,48 @@ import post7 from '../assets/instagram/post7.webp';
 import post8 from '../assets/instagram/post8.webp';
 import post9 from '../assets/instagram/post9.webp';
 import post10 from '../assets/instagram/post10.webp';
+import post11 from '../assets/instagram/post11.webp';
+import post12 from '../assets/instagram/post12.webp';
+import post13 from '../assets/instagram/post13.webp';
+import post14 from '../assets/instagram/post14.webp';
+import post15 from '../assets/instagram/post15.webp';
 
 const instagramPosts = [
+  {
+    id: "15",
+    image: post15,
+    url: "https://www.instagram.com/p/DSQNq1aCEY6/?img_index=1",
+    type: "image",
+    date: "2024-12-14"
+  },
+    {
+    id: "14",
+    image: post14,
+    url: "https://www.instagram.com/p/DSN8qmxiAdy/",
+    type: "image",
+    date: "2024-12-13"
+  },
+  {
+    id: "13",
+    image: post13,
+    url: "https://www.instagram.com/p/DSNrD1vCGap/?img_index=3",
+    type: "image",
+    date: "2024-12-13"
+  },
+  {
+    id: "12",
+    image: post12,
+    url: "https://www.instagram.com/p/DSNTxBFiB25/?img_index=3",
+    type: "image",
+    date: "2024-12-13"
+  },
+    {
+    id: "11",
+    image: post11,
+    url: "https://www.instagram.com/p/DSNGyrriOp3/?img_index=4",
+    type: "image",
+    date: "2024-12-13"
+  },
   {
     id: "10",
     image: post10,
