@@ -13,8 +13,65 @@ import post12 from '../assets/instagram/post12.webp';
 import post13 from '../assets/instagram/post13.webp';
 import post14 from '../assets/instagram/post14.webp';
 import post15 from '../assets/instagram/post15.webp';
+import post16 from '../assets/instagram/post16.webp';
+import post17 from '../assets/instagram/post17.webp';
+import post18 from '../assets/instagram/post18.webp';
+import post19 from '../assets/instagram/post19.webp';
+import post20 from '../assets/instagram/post20.webp';
+import post21 from '../assets/instagram/post21.webp';
+import post22 from '../assets/instagram/post22.webp';
+
 
 const instagramPosts = [
+  {
+    id: "22",
+    image: post22,
+    url: "https://www.instagram.com/p/DSVswikiGtV/?img_index=1",
+    type: "image",
+    date: "2024-12-16"
+  },
+  {
+    id: "21",
+    image: post21,
+    url: "https://www.instagram.com/p/DSVhaZjCHaA/?img_index=1",
+    type: "image",
+    date: "2024-12-16"
+  },
+  {
+    id: "20",
+    image: post20,
+    url: "https://www.instagram.com/unidos.pela.voz/p/DSQqDkyCENv/?img_index=7",
+    type: "image",
+    date: "2024-12-16"
+  },
+  {
+    id: "19",
+    image: post19,
+    url: "https://www.instagram.com/p/DSVee4_iFWX/?img_index=1",
+    type: "image",
+    date: "2024-12-16"
+  },
+  {
+    id: "18",
+    image: post18,
+    url: "https://www.instagram.com/p/DSVPoZliBbf/?img_index=1",
+    type: "image",
+    date: "2024-12-16"
+  },
+  {
+    id: "17",
+    image: post17,
+    url: "https://www.instagram.com/unidos.pela.voz/p/DSVH8ygiNrH/?img_index=1",
+    type: "image",
+    date: "2024-12-15"
+  },
+  {
+    id: "16",
+    image: post16,
+    url: "https://www.instagram.com/unidos.pela.voz/p/DSQqDkyCENv/?img_index=7",
+    type: "image",
+    date: "2024-12-15"
+  },
   {
     id: "15",
     image: post15,
